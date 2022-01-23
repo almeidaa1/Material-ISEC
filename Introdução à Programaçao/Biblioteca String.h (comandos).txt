@@ -1,0 +1,15 @@
+BIBLIOTECA <string.h>
+
+- strlen -> conta o numero de caracteres de uma string sem contar com o caracter nulo
+
+- strcpy -> copia para uma string outra string
+  strncpy -> copia para uma string n caracteres de outra string 
+
+- strcat -> concatena (junta) para uma string uma outra string
+  strncat -> concatena (junta) para uma string n caracteres de uma outra string
+
+-strcmp -> compara uma string com outra. Se devolver 0 é porque as strings sao iguais
+					Se devolver -1 é porque a str1 < str2
+					Se devolver 1 é porque str1 > str2
+
+ strncmp -> compara n caracteres de uma string com os n caracteres da outra

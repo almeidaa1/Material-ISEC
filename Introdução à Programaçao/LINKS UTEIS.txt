@@ -1,0 +1,7 @@
+
+https://www.onlinegdb.com/  --> Compilador Online
+
+https://pt.wikipedia.org/wiki/Operadores_em_C_e_C%2B%2B  --> Precedencia de Operações em C <--https://en.cppreference.com/w/c/language/operator_precedence 
+
+http://www.estgv.ipv.pt/paginaspessoais/fmorgado/EDados/Sebenta_C.pdf  --> Sebenta Linguagem C
+

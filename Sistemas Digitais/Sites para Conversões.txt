@@ -1,0 +1,6 @@
+ 
+ https://www.rapidtables.com/convert/number/hex-to-decimal.html
+
+ https://www.boolean-algebra.com/  --> ex :. (A + B)*C e diz-nos :) ( Neste site tambem tem SQL )
+
+ https://www.emathhelp.net/en/calculators/discrete-mathematics/boolean-algebra-calculator/?f=a%E2%8A%95b

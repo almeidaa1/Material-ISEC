@@ -1,8 +1,6 @@
  							
 							 		----HTML----
 
-#AULA 1#  PDF STORA: file:///C:/Users/almei/OneDrive/Ambiente%20de%20Trabalho/Tecnologias%20WEB/HTML%20Conceitos%20B%C3%A1sicos.pdf
-
 ~~~~~~~~~~#
   ~~Navegaçao interna(No prório site)~~   ex:. Ir de cima da página até baixo da página bastando clicar num hyperlink na
               (Teleport)		  	parte de cima da página WEB para ir para baixo	

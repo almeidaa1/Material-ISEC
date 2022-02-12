@@ -1,0 +1,124 @@
+//colors
+$text-color: #222222;
+$themecolor: #170a48;
+$secundary-color: #f27731;
+$ternary-color: #ccf962;
+$menu-item-color: white; 
+$link-color: $secundary-color;
+
+//fontes (tipo de letra)
+$text-font: 'Open Sans', sans-serif;
+$headline-font: Georgia, serif;
+
+//dimensoes das diversas secçoes
+$content-width: 940px;
+$header-height: 60px;
+$footer-height: 60px;
+
+@mixin codereuse ($colorborg) {
+    background-color: $colorborg;
+    color:white;
+}
+
+.code-button{
+    @include codereuse(orange);
+    padding:8px;
+    border-radius:5px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $text-font;
+    color: $text-color;
+}
+
+h1, h2, h3, h4 {
+font-family: $headline-font;
+}
+
+p {
+font-family:$text-font;
+}
+a { 
+color:$link-color
+}
+
+.wrapper {
+    margin: 0 auto;
+    display:grid;
+    grid-gap: 10px;
+    max-width: $content-width;
+
+    header {
+        background-color: $themecolor;
+        min-height:$header-height;
+        border-radius: 5px;
+
+        #main-menu {
+            a{
+                /*color:$menu-item-color;
+                text-decoration: none;*/
+
+                /*&:hover{
+                    border-bottom: 2px white solid;
+                }*/
+
+                color: $link-color;
+                
+                    &:hover{
+                        color:darken($link-color,15%);
+                    }
+            }
+            ul{
+             list-style-type: none;   
+             padding: 0px 10px;
+             display:flex;
+             flex-direction: column;
+            }
+            li{
+                padding: 3px 0px;
+            }
+        }
+    }
+
+    #content {
+
+    }
+
+    #sidebar {
+        ul{
+            padding:0px;
+        }
+        
+        li{
+            list-style: none;
+            padding:5px 0px;
+            border-bottom: 1px dashed #ddd
+        }
+    }
+
+    footer {
+        background-color:$ternary-color;
+        height:$footer-height;
+        border-radius:5px;
+    }
+
+    @media screen and (min-width:525px) {
+        grid-template-columns: 4fr 1fr;
+
+        header #main-menu ul{
+            flex-direction: row;
+        }
+
+        header #main-menu li {
+            padding-right:20px;
+        }
+
+        header,footer{
+            grid-column: 1 / -1; //primeira à ultima coluna
+        }
+    }
+}

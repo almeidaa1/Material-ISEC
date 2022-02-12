@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Mac
+            <ul>
+                <li>MacBook</li>
+                <li>MacBook Air</li>
+                <li>MacBook Pro</li> 
+            </ul>
+        </li>
+        <li>iPad
+            <ul>
+                <li>iPad</li>
+                <li>iPad Pro</li>
+            </ul>
+        </li>
+        <li>iPhone</li>
+        <ul>
+            <li>iPhone X</li>
+            <li>iPhone 8</li>
+            <li>iPhone 7</li>
+            <li>iPhone SE</li>
+        </ul>
+        <li>Watch</li>
+        <ul>
+            <li>Apple Watch</li>
+            <li>Apple Watch Series 3</li>
+        </ul>
+        <li>TV</li>
+        <ul>
+            <li>Apple TV</li>
+            <li>Acessórios</li>
+            <ul>
+                <li>Auscultadores</li>
+                <li>Controlador de Jogos</li>
+                <li>Cabo HDMI 4K</li>
+            </ul>
+        </ul>
+        <li>Suporte</li>
+    </ul>
+    <h1>Your Stuff, anywhere</h1>
+    <form action="mailto:tw@alunos.isec.pt" method="post">
+        <fieldset>
+        <legend>MyProfile</legend>
+        <input name = "FN" type="text" placeholder="First Name" required size= "40" autofocus maxlength="20"/><br>
+        <br><input name = "LN" type="text" placeholder = "Last Name" required size="40"/>
+        <br>
+        <br><input name = "email" type="email" placeholder="Email" required size = "40"><br>
+        <br>
+        <input name = "pass" type ="password" placeholder = "Password" required size = "40" pattern="[A-Za-z]{3}[0-9]{3}"/><br>
+        <br><input type="checkbox" name = "Agree DropBox" required>I agree to DropBox terms
+        <br>
+        <br><input name = "signup" type="submit" value="SignUp"/>        
+        </fieldset>
+        <textarea name="comentario" rows="4" cols="20" placeholder="enter text here..." maxlength="150"></textarea>
+        <select name="plano">
+            <option value="1">Base Plan</option>
+            <option value="2">Intermediate Plan</option>
+            <option value="3">Premium Plan</option>
+        </select>                     
+    </form>
+   
+</body>
+</html>

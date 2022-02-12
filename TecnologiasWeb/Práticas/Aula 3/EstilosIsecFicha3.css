@@ -1,0 +1,17 @@
+span{
+    font-style: italic;
+}
+
+body{
+    background-color: #DDDDDD;
+}
+
+h1{
+    color: #158AC4;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p{
+    color: #666666;
+}

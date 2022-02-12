@@ -1,0 +1,35 @@
+ 							
+							 		----HTML----
+
+#AULA 1#  PDF STORA: file:///C:/Users/almei/OneDrive/Ambiente%20de%20Trabalho/Tecnologias%20WEB/HTML%20Conceitos%20B%C3%A1sicos.pdf
+
+~~~~~~~~~~#
+  ~~Navegaçao interna(No prório site)~~   ex:. Ir de cima da página até baixo da página bastando clicar num hyperlink na
+              (Teleport)		  	parte de cima da página WEB para ir para baixo	
+
+1º Damos um nome à secção onde queremos que ao clicar no link se teleporte para lá
+ 	ex:. <a name="bottom"></a>
+
+2º Na secçao onde se encontra o tal link, para que ao clicar-mos nele a página se teleporte para baixa 
+	ex:. <a href="#bottom">CLIQUE AQUI E VÁ PARA BAIXO</a>
+
+3º Abre o site clique no link e vai para baixo
+
+Se nao percebes-te nada ver este video explicativo : https://youtu.be/wcW8UyUrZJU
+~~~~~~~~~~#
+ 
+~~~~~~~~~~0
+  ~~Colocar uma imagen no WebSite~~
+
+ex:. <img src="bird.jpg">     	ver sempre o directório (passar o rato por cima de "bird.jpg" para ver se o diretorio
+							está correto)
+~~~~~~~~~~0
+
+~~~~~~~~~~1
+  ~~Color video no WebSite~~
+
+ex:. <video src="cozinha.webm" height="320" wight="240" controls></video>      -controls-(Para aparecer os controlos(som
+												pausa, etc)
+									       -height-(altura)
+									       -wight-(largura)
+~~~~~~~~~~1

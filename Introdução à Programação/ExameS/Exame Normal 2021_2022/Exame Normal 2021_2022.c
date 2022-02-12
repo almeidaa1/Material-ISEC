@@ -53,11 +53,31 @@ int insere_num (float a[], int n_elem, int tam, float num) {
 /// Exercicio 3 (4.5 Valores) ///
 
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
-#define MAX 300
+#include <string.h>
+#define MAX 500
 
-int Palindromo(char str[]);
+int Palindromo(char str[]) {
+	int i, x = 0, cont;
+	char palind[MAX];
+
+	for(i = 0; str[i] != '\0'; i++) {
+		while(str[i] == ' ')
+			i++;
+		while(str[i] != ' ' && str[i] != '\0') {
+			str[i] = tolower(str[i]);
+			str[i] = palind[x];
+			i++;
+			x++;
+		}
+		palind[x] = '\0';
+	}
+	for(x = 0; x < strlen(palind)/2; x++) {
+		if(palind[x] != palind[strlen(palind)-(x+1)])
+			return 0;
+	}
+	return 1;
+}
 
 void main() {
 	char str1[MAX];
@@ -67,32 +87,4 @@ void main() {
 		printf("\nA frase e um palindromo\n");
 	else
 		printf("\nA frase nao e um palindromo\n");
-}
-
-int Palindromo(char str[]) {
-	int i, cont = 0, j = 0;
-	char palin[MAX];
-
-	for(i = 0; i < strlen(str); i++){
-		while(str[i] == ' ')
-			i++;
-		for(int x = 0; x < strlen(str); x++) {
-			str[x] = tolower(str[x]);
-		}
-		while(str[i] != ' ') {
-			palin[j] = str[i];
-			j++;
-			i++;
-		}
-		i--;
-		palin[j] = '\0';
-	}
-	for(int i = 0; i < strlen(palin)/2; i++) {
-		if( palin[i] == palin[ strlen(palin) - (i+1) ] )
-			cont++;
-	}
-	if(cont == strlen(palin)/2)
-		return 1;
-	else
-		return 0;
 }

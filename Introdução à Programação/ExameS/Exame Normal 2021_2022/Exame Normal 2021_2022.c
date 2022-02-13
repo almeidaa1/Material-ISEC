@@ -66,10 +66,11 @@ int Palindromo(char str[]) {
 			i++;
 		while(str[i] != ' ' && str[i] != '\0') {
 			str[i] = tolower(str[i]);
-			str[i] = palind[x];
+			palind[x] = str[i];
 			i++;
 			x++;
 		}
+		i--;
 		palind[x] = '\0';
 	}
 	for(x = 0; x < strlen(palind)/2; x++) {

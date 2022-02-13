@@ -46,8 +46,8 @@ int main(void) {
  		printf("Conseguiu %d pontos !\n", pontos);
  		if(pontos >= maior)
  			maior = cont;
- 	}while(part != 'N' && part != 'n');
- 	for(int i = 1; i <= 40; i++)
+ 	}while(part != 'N' && part != 'n')
+ 	for(int i = 1; i <= 40; i++);
  		printf("-");
  	printf("\nTotal de participantes = %d\n", cont);
  	printf("Valor angariado ( euros ) = %d\n", angariado);

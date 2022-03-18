@@ -20,7 +20,7 @@ void main(void){ // Funçao main - Nao pedida no exercicio //
 }
 
 int maior_subida(int *tab, int dim) {
-	int maiorsub = *(tab+1)-*tab, pos;
+	int maiorsub = *(tab+1)-*tab, pos = 1;
 		for(int i = 2; i < dim; i++) {
 			if(*(tab+i) - *(tab+(i-1)) >= maiorsub){
 				maiorsub = *(tab+i) - *(tab+(i-1));

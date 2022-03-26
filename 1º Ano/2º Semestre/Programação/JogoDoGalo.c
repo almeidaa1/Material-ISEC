@@ -2,24 +2,28 @@
 #define N 3
 
 void iniciaTabuleiro(char galo[][N]) {
-	for(int i = 0; i < N; i++)
-		for(int j = 0; j < N; j++)
+	for(int i = 0; i < N; i++){
+		for(int j = 0; j < N; j++){
 			galo[i][j] = '_';
+		}
+	}
 }
 
 void printaTabuleiro(char galo[][N]) {
 	printf("\n");
-	for(int i = 0; i < N; i++){
-		for(int j = 0; j < N; j++){
-			printf(" %c ", galo[i][j]);
-		}
-		printf("\n");
-	}
-	printf("\n");
+	printf("   1   2   3\n");
+  	printf(" +---+---+---+\n");
+   	printf("1| %c | %c | %c |\n",galo[0][0],galo[0][1],galo[0][2]);
+   	printf(" +---+---+---+\n");
+   	printf("2| %c | %c | %c |\n",galo[1][0],galo[1][1],galo[1][2]);
+   	printf(" +---+---+---+\n");
+   	printf("3| %c | %c | %c |\n",galo[2][0],galo[2][1],galo[2][2]);
+   	printf(" +---+---+---+\n");
 }
 
 void escolheJogada(char galo[][N], int jogador, int* pposicao) {
-	printf("\n|| Jogador %d ||\n", jogador);
+	if(jogador == 1) printf("\n|| Jogador 1 'X' ||\n");
+	else printf("\n|| Jogador 2 'O' ||\n");
 	do{
 		printf("Posicao: ");
 		scanf(" %d", pposicao);
@@ -52,9 +56,9 @@ int verificaVencedor(char galo[][N]) { //falta isto
 
 void printaVencedor(int ganha, int jogador) {
 	if(ganha && jogador == 1)
-		printf("\nO Jogador 1 Ganhou\nResultado Final:");
+		printf("\n--Resultado Final--> Jogador 1 Ganhou 'X' ");
 	else if(ganha && jogador == 2)
-		printf("\nO Jogador 2 Ganhou\nResultado Final:");
+		printf("\n--Resultado Final--> Jogador 2 Ganhou 'O' ");
 }
 
 int main(void) {
@@ -71,6 +75,6 @@ int main(void) {
 			jogador = 0;
 		jogador++;
 	}
-	if(ganha == 0)printf("Empate");
-	printaTabuleiro(galo); //certo
+	if(ganha == 0)printf("\n--Resultado Final--> Empate ' X O '");
+	printaTabuleiro(galo);
 }

@@ -19,4 +19,6 @@ void zeros(int *v, int tam){
 //     int n = 11;
 //     int a[11] = {-4,2,0,3,4,10,0,0,0,7,0};
 //     zeros(a, n);
+//     for(int i = 0; i < 11; i++)
+//         printf("%d ", a[i]);
 // }

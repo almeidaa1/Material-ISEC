@@ -22,32 +22,26 @@ void main(void) {
 	}
 }
 
-int insere_num (float a[], int n_elem, int tam, float num) {
-	int i, x;
-	if(n_elem < 4){
-		if(n_elem == 0){
-			a[n_elem] = num;
-			n_elem++;
-		}
-		else {
-			for(i = 0; i < n_elem; i++) {
-				if(a[i] >= num) {
-					for(x = n_elem; x > i; x--){
-						a[x] = a[x-1];
-					}
-					a[i] = num;
-					n_elem++;
-					return n_elem;
-				}else {
-					if(i == n_elem - 1){
-						a[i+1] = num;
-					}
-				}
-			}
-			n_elem++;
-		}
-	}
-	return n_elem;
+int insere_num(float a[], int n_elem, int tam, float num) {
+    int x = n_elem;
+
+    if(x == 0){
+        a[0] = num;
+        return 1;
+    }
+    if(x < 4) {
+        for(int i = x-1; i >= 0; i--) {
+            if(num >= a[i]){
+                a[i+1] = num;
+                break;
+            }
+            else{
+                a[i+1] = a[i];
+                a[i] = num;
+            }
+        }
+        return x+1;
+    }
 }
 
 /// Exercicio 3 (4.5 Valores) ///

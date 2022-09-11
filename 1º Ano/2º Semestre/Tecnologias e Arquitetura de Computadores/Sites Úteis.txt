@@ -1,0 +1,17 @@
+https://arquiteturadecomputadores11i.blogspot.com/2013/01/registos-do-8086-visao-geral.html
+
+Códigos binários, inversos e complementares -> https://pt.planetcalc.com/747/
+
+https://www.epochconverter.com/numbers/bin-oct-dec-hex
+
+
+ 									- ASSEMBLY -
+
+
+http://linasm.sourceforge.net/docs/instructions/cpu.php -> Sintaxe Assembly
+
+http://www.baskent.edu.tr/~tkaracay/etudio/ders/prg/pascal/PasHTM2/pas/lowlevel.html
+
+https://jbwyatt.com/253/emu/asm_tutorial_01.html
+
+https://www.chibialiens.com/8086/
